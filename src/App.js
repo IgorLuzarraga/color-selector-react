@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
+import ActiveColorSelection from './components/activeColorSelection/ActiveColorSelection';
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
+        <ActiveColorSelection />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
