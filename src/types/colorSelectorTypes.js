@@ -10,13 +10,13 @@ const CIRCLE_FOUR_ACTIVE = "CIRCLE_FOUR_ACTIVE"
 const CIRCLE_FIVE_ACTIVE = "CIRCLE_FIVE_ACTIVE"
 const CIRCLE_ACTIVE_NONE = "CIRCLE_ACTIVE_NONE"
 
-// const initialColorSelection = {
-//     colorCircle_1: COLOR_SELECTED_NONE,
-//     colorCircle_2: COLOR_SELECTED_NONE,
-//     colorCircle_3: COLOR_SELECTED_NONE,
-//     colorCircle_4: COLOR_SELECTED_NONE,
-//     colorCircle_5: COLOR_SELECTED_NONE
-// }
+// Default color for Circles
+const CIRCLE_ONE_COLOR_DEFAULT = "red"
+const CIRCLE_TWO_COLOR_DEFAULT = "orange"
+const CIRCLE_THREE_COLOR_DEFAULT = "purple"
+const CIRCLE_FOUR_COLOR_DEFAULT = "yellow"
+const CIRCLE_FIVE_COLOR_DEFAULT = "black"
+const CIRCLE_COLOR_DEFAULT = "white"
 
 // Circle IDs
 const CIRCLE_ONE_ID = "CIRCLE_ONE_ID"
@@ -25,12 +25,25 @@ const CIRCLE_THREE_ID = "CIRCLE_THREE_ID"
 const CIRCLE_FOUR_ID = "CIRCLE_FOUR_ID"
 const CIRCLE_FIVE_ID = "CIRCLE_FIVE_ID"
 
+// const initialColorSelection = [
+//     {id: CIRCLE_ONE_ID, color: CIRCLE_ONE_COLOR_DEFAULT },
+//     {id: CIRCLE_TWO_ID, color: CIRCLE_TWO_COLOR_DEFAULT },
+//     {id: CIRCLE_THREE_ID, color: CIRCLE_THREE_COLOR_DEFAULT },
+//     {id: CIRCLE_FOUR_ID, color: CIRCLE_FOUR_COLOR_DEFAULT },
+//     {id: CIRCLE_FIVE_ID, color: CIRCLE_FIVE_COLOR_DEFAULT }
+// ]
+
+// Actice Color Selection (ACS) States
+const ACS_INITIAL_STATE = "ACS_INITIAL_STATE"
+const ACS_COLOR_PICKING_STATE = "ACS_COLOR_PICKING_STATE"
+const ACS_RESTORE_STATE = "ACS_RESTORE_STATE"
+
 const initialColorSelection = [
-    {id: CIRCLE_ONE_ID, color: COLOR_SELECTED_NONE },
-    {id: CIRCLE_TWO_ID, color: COLOR_SELECTED_NONE },
-    {id: CIRCLE_THREE_ID, color: COLOR_SELECTED_NONE },
-    {id: CIRCLE_FOUR_ID, color: COLOR_SELECTED_NONE },
-    {id: CIRCLE_FIVE_ID, color: COLOR_SELECTED_NONE }
+    {id: CIRCLE_ONE_ID, color: CIRCLE_COLOR_DEFAULT },
+    {id: CIRCLE_TWO_ID, color: CIRCLE_COLOR_DEFAULT },
+    {id: CIRCLE_THREE_ID, color: CIRCLE_COLOR_DEFAULT },
+    {id: CIRCLE_FOUR_ID, color: CIRCLE_COLOR_DEFAULT },
+    {id: CIRCLE_FIVE_ID, color: CIRCLE_COLOR_DEFAULT }
 ]
 
 export {
@@ -42,5 +55,8 @@ export {
     CIRCLE_FOUR_ACTIVE,
     CIRCLE_FIVE_ACTIVE,
     CIRCLE_ACTIVE_NONE,
+    ACS_INITIAL_STATE,
+    ACS_COLOR_PICKING_STATE,
+    ACS_RESTORE_STATE,
     initialColorSelection
 }
