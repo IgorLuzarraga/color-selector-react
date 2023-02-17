@@ -34,17 +34,17 @@ const ActiveColorSelection = () => {
 const changeIconStyle = (
     currentCircleId, 
     activeCircleId, 
-    color, 
+    currenCircleColor, 
     activeCircleColor,
     activeColorSelectionST
     ) => {
     const {r, g, b} = activeCircleColor
-    const {r2, g2, b2} = color
+    const {r2, g2, b2} = currenCircleColor
 
     const initialState = {
         'font-size': '25px',
         // background: CIRCLE_COLOR_DEFAULT 
-        background: color
+        background: currenCircleColor
     }
 
     const clickOnStateActive = {
@@ -56,7 +56,7 @@ const changeIconStyle = (
     const clickOnStateDesactive = {
         'font-size': '25px',
         // background: `rgb(${r2}, ${g2}, ${b2})`
-        background: color
+        background: currenCircleColor
     }
 
     const colorPickingStateActive = {
@@ -73,7 +73,7 @@ const changeIconStyle = (
     const restoringState = {
         'font-size': '45px',
         // 'background-color': `rgb(${r2}, ${g2}, ${b2})`
-        background:  color
+        background:  currenCircleColor
     }
 
     switch (activeColorSelectionST) {
