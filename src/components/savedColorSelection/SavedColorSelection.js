@@ -42,7 +42,7 @@ const savedColorStyle = (color) => {
         width: '6vh',
         height: '6vh',
         background: `rgb(${r}, ${g}, ${b})`,
-        'margin-right': '15px',
+        'margin-right': '5px',
         border: 'solid 2px white'
     }
 }

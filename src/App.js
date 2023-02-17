@@ -1,12 +1,7 @@
 import React from 'react';
 //import './App.css';
-import ActiveColorSelection from './components/activeColorSelection/ActiveColorSelection';
-import ColorPicker from './components/colorPicker/ColorPicker';
-import ColorSelectionSavedList from './components/colorSelectionSavedList/ColorSelectionSavedList'
-import SaveColorSelection from './components/saveColorSelection/SaveColorSelection';
-import ColorSelectionName from './components/colorSelectionName/ColorSelectionName';
 import Header from './components/header/Header';
-import Footer from './components/footer/Footer';
+// import Footer from './components/footer/Footer';
 import ColorPaletteGenerator from './components/colorPaletteGenerator/ColorPaletteGenerator';
 
 // function App() {

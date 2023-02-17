@@ -1,0 +1,16 @@
+.saveBtnStyle {
+    color: white;
+    font-size: 24px;
+    /* background: li; */
+    margin-left: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+const saveBtnStyle-2 {
+    font-size: 24px;
+    border: 0px;
+    cursor: pointer;
+    background: lightgrey;
+    margin-right: 1px;
+}

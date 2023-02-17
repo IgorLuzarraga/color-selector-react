@@ -1,5 +1,5 @@
 .inputStyle  {
-    height: 22px;
+    height: 25px;
     width: 261px;
     border: none;
     text-align: right;
@@ -13,6 +13,7 @@
 
 .labelStyle {
     color: white;
+    font-size: 24px;
     margin-left: 5px;
     margin-right: 10px;
 }
