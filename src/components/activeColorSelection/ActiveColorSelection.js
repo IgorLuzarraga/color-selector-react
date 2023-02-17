@@ -10,7 +10,6 @@ import {
     ACS_COLOR_PICKING_STATE, 
     ACS_INITIAL_STATE, 
     ACS_RESTORE_STATE,
-    CIRCLE_COLOR_DEFAULT,
     ACTIVE_CIRCLE_COLOR_DEFAULT
  } from '../../types/colorSelectorTypes';
 
@@ -84,7 +83,6 @@ const changeIconStyle = (
         case ACS_COLOR_PICKING_STATE:
             return currentCircleId === activeCircleId ? colorPickingStateActive : colorPickingStateDesactive
         case ACS_RESTORE_STATE:
-            console.log("GOAZEN")
             return restoringState
         default:
             return -1

@@ -1,0 +1,13 @@
+.col-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    background: black;
+    padding-bottom: 10px;
+}
+
+[class^=row-] {
+    display: flex;
+    flex-direction: row;
+    gap: 1vh;
+}
