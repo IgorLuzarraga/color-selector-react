@@ -1,12 +1,12 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-// import { faCircle } from "@fortawesome/free-regular-svg-icons";
 import { faSquare } from "@fortawesome/free-regular-svg-icons";
 import { faTrashCan } from "@fortawesome/free-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import './style.css'
 import { 
+    changeACSstateToRestoreST,
     removeColorSelection,
     restoreColorSelection,
  } from '../../features/colorSelector/colorSelectorSlice';
@@ -19,6 +19,7 @@ const SavedColorSelection = ({savedColorSelection}) => {
     const dispatch = useDispatch()
     const {colorSelection, id} = savedColorSelection
     
+    console.log("savedColorSelection: ", savedColorSelection)
     return (
         <div>
             <button 
@@ -30,7 +31,11 @@ const SavedColorSelection = ({savedColorSelection}) => {
 
             <ul 
                 className='ulStyle'
-                onClick={ () => dispatch(restoreColorSelection(colorSelection))}
+                onClick={ () => {
+                        dispatch(changeACSstateToRestoreST())
+                        dispatch(restoreColorSelection(colorSelection))
+                    }
+                }
             >
                 {renderListItems(colorSelection)}
             </ul>

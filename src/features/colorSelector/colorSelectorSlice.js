@@ -1,5 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit'
-import { CIRCLE_ACTIVE_NONE } from '../../types/colorSelectorTypes.js'
+import { ACS_CLICK_ON_STATE, ACS_COLOR_PICKING_STATE, ACS_RESTORE_STATE, CIRCLE_ACTIVE_NONE } from '../../types/colorSelectorTypes.js'
 import { 
   ACTIVE_CIRCLE_COLOR_DEFAULT, 
   COLOR_SELECTION_NAME_NONE,
@@ -21,6 +21,7 @@ const colorSelectorSlice = createSlice({
     initialState,
     reducers: {
       setActiveCircle: (state, action) => {
+        console.log("setActiveCircle: ", action.payload)
         state.activeCircle = action.payload
       },
       changeActiveCircleColor: (state, action) => {
@@ -28,12 +29,24 @@ const colorSelectorSlice = createSlice({
         state.activeColorSelection = 
           changeColorToActiveCircleInColorSelection(state, action.payload)
       },
-      resetActiveCircle: (state) => {
+      // resetActiveCircle: (state) => {
+      //   state.activeCircle = CIRCLE_ACTIVE_NONE
+      //   state.activeCircleColor = ACTIVE_CIRCLE_COLOR_DEFAULT
+      // },
+      changeACSstateToInitialST: (state) => {
+        state.activeColorSelectionST = ACS_INITIAL_STATE
+        //state.activeColorSelection = initialColorSelection
         state.activeCircle = CIRCLE_ACTIVE_NONE
         state.activeCircleColor = ACTIVE_CIRCLE_COLOR_DEFAULT
       },
-      changeACSstate: (state, action) => {
-        state.activeColorSelectionST = action.payload
+      changeACSstateToClickOnST: (state) => {
+        state.activeColorSelectionST = ACS_CLICK_ON_STATE
+      },
+      changeACSstateToColorPickingST: (state) => {
+        state.activeColorSelectionST = ACS_COLOR_PICKING_STATE
+      },
+      changeACSstateToRestoreST: (state) => {
+        state.activeColorSelectionST = ACS_RESTORE_STATE
       },
       saveColorSelection: (state) => {
         state.lastColorSelectionId++
@@ -49,7 +62,7 @@ const colorSelectorSlice = createSlice({
           )
       },
       restoreColorSelection: (state, action) => {
-        // console.log("color selection: ", action.payload)
+        console.log("color selection: ", action.payload)
         state.activeColorSelection = action.payload
       },
     }
@@ -83,8 +96,11 @@ export default colorSelectorSlice.reducer
 export const {
   setActiveCircle,
   changeActiveCircleColor,
-  resetActiveCircle,
-  changeACSstate,
+  // resetActiveCircle,
+  changeACSstateToInitialST,
+  changeACSstateToClickOnST,
+  changeACSstateToColorPickingST,
+  changeACSstateToRestoreST,
   removeColorSelection,
   restoreColorSelection,
   saveColorSelection

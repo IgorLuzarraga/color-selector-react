@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { resetActiveCircle, saveColorSelection } from '../../features/colorSelector/colorSelectorSlice';
+import { changeACSstateToInitialST, saveColorSelection } from '../../features/colorSelector/colorSelectorSlice';
 
 const SaveColorSelection = () => {
     const dispatch = useDispatch()
@@ -10,7 +10,9 @@ const SaveColorSelection = () => {
             <button
                 onClick={ () => { 
                             dispatch(saveColorSelection())
-                            dispatch(resetActiveCircle())
+                            dispatch(changeACSstateToInitialST())
+                            // dispatch(resetActiveCircle())
+                            // dispatch(changeACSstate(ACS_INITIAL_STATE))
                     }
                 }
             >

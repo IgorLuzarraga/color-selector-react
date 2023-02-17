@@ -1,7 +1,6 @@
 import { SketchPicker } from "react-color";
 import { useSelector, useDispatch } from "react-redux";
-import { changeActiveCircleColor } from "../../features/colorSelector/colorSelectorSlice";
-// import ActiveColorSelection from "../activeColorSelection/ActiveColorSelection";
+import { changeACSstateToColorPickingST, changeActiveCircleColor } from "../../features/colorSelector/colorSelectorSlice";
 
 const ColorPicker = () => {
     const dispatch = useDispatch()
@@ -10,10 +9,9 @@ const ColorPicker = () => {
     return (
         <div className="sketchPicker">
 
-        {/* <ActiveColorSelection pickerColor={pickerColor} /> */}
-
         <SketchPicker
           onChange={(color) => {
+            dispatch(changeACSstateToColorPickingST())
             dispatch(changeActiveCircleColor(color.rgb))
           }}
           color={pickerColor}
