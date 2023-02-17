@@ -1,13 +1,16 @@
 .col-main {
     display: flex;
     flex-direction: column;
-    gap: 2vh;
+    gap: 7vh;
     background: black;
     padding-bottom: 10px;
+    align-items:center;
+    justify-content: center;
+    color: white;
 }
 
 [class^=row-] {
     display: flex;
     flex-direction: row;
-    gap: 1vh;
+    gap: 2vh;
 }

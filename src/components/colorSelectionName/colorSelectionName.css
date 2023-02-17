@@ -5,12 +5,14 @@
     text-align: right;
     font-size: 24px;
     font-weight: 600;
-    color: black;
-    background: white;
+    color: white;
+    background: black;
+    border: solid 2px white;
     outline: none;
 }
 
 .labelStyle {
-    color: black;
+    color: white;
     margin-left: 5px;
+    margin-right: 10px;
 }

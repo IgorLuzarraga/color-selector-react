@@ -14,7 +14,6 @@ const ColorSelectionName = () => {
                 className='labelStyle'
             >
                 name:
-                {/* {fromUnitType} */}
             </label>
             <input
                 onChange={(e) => {

@@ -13,7 +13,6 @@ import {
     ACTIVE_CIRCLE_COLOR_DEFAULT
  } from '../../types/colorSelectorTypes';
 
-//const ActiveColorSelection = ({pickerColor}) => {
 const ActiveColorSelection = () => {
     const activeColorSelection = useSelector((state) => state.colorSelector.activeColorSelection)
     const activeCircleColor = useSelector((state) => state.colorSelector.activeCircleColor)
@@ -29,7 +28,6 @@ const ActiveColorSelection = () => {
     );
 }
 
-
 const changeIconStyle = (
     currentCircleId, 
     activeCircleId, 
@@ -41,38 +39,45 @@ const changeIconStyle = (
     const {r2, g2, b2} = currenCircleColor
 
     const initialState = {
-        'font-size': '25px',
+        'font-size': '45px',
         // background: CIRCLE_COLOR_DEFAULT 
-        background: currenCircleColor
+        background: currenCircleColor,
+        // border: 'solid 2px white'
     }
 
     const clickOnStateActive = {
-        'font-size': '35px',
+        'font-size': '75px',
         // bakckground: `rgb(${r}, ${g}, ${b})`
-        background: ACTIVE_CIRCLE_COLOR_DEFAULT
+        background: ACTIVE_CIRCLE_COLOR_DEFAULT,
+        // border: 'solid 2px white',
+        color: 'white'
     }
 
     const clickOnStateDesactive = {
-        'font-size': '25px',
+        'font-size': '45px',
         // background: `rgb(${r2}, ${g2}, ${b2})`
-        background: currenCircleColor
+        background: currenCircleColor,
+        // border: 'solid 2px white'
     }
 
     const colorPickingStateActive = {
-        'font-size': '35px',
-        background: `rgb(${r}, ${g}, ${b})`
+        'font-size': '55px',
+        background: `rgb(${r}, ${g}, ${b})`,
+        // border: 'solid 2px white'
         // background: activeCircleColor
     }
 
     const colorPickingStateDesactive = {
-        'font-size': '25px',
-        background: `rgb(${r2}, ${g2}, ${b2})`
+        'font-size': '45px',
+        background: `rgb(${r2}, ${g2}, ${b2})`,
+        // border: 'solid 2px white'
     }
 
     const restoringState = {
-        'font-size': '45px',
+        'font-size': '55px',
         // 'background-color': `rgb(${r2}, ${g2}, ${b2})`
-        background:  currenCircleColor
+        background:  currenCircleColor,
+        // border: 'solid 2px white'
     }
 
     switch (activeColorSelectionST) {
