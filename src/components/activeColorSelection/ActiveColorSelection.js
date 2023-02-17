@@ -30,30 +30,6 @@ const ActiveColorSelection = () => {
     );
 }
 
-// const changeIconStyle = (currentCircleId, activeCircleId, color, activeCircleColor) => {
-//     const {r, g, b} = activeCircleColor
-//     const {r2, g2, b2} = color
-
-//     console.log("changeIconStyle -> color: ", color)
-//     console.log("changeIconStyle -> currentCircleId: ", currentCircleId)
-//     console.log("changeIconStyle -> activeCircleId: ", activeCircleId)
-//     const iconActive = {
-//         'font-size': '35px',
-//         background: `rgb(${r}, ${g}, ${b})` 
-//     }
-
-//     const iconDesactive = {
-//         'font-size': '25px',
-//         background: `rgb(${r2}, ${g2}, ${b2})` 
-//     }
-
-//     // const iconDesactive = {
-//     //     'font-size': '25px',
-//     //     background: color
-//     // }
-
-//     return currentCircleId === activeCircleId ? iconActive : iconDesactive
-// }
 
 const changeIconStyle = (
     currentCircleId, 
@@ -150,9 +126,6 @@ const ListItem = ({circle, activeCircleColor}) => {
         </li>
     )   
 }
-
-// const renderListItems = (list, pickerColor) =>
-//     list.map((item, index) => <ListItem key={index} circle={item} pickerColor={pickerColor}/>)
 
 const renderListItems = (activeColorSelection, activeCircleColor) =>
     activeColorSelection.map((item, index) => <ListItem key={index} circle={item} activeCircleColor={activeCircleColor}/>)

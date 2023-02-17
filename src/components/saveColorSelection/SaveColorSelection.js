@@ -14,8 +14,6 @@ const SaveColorSelection = () => {
                 onClick={ () => { 
                             dispatch(saveColorSelection())
                             dispatch(changeACSstateToInitialST())
-                            // dispatch(resetActiveCircle())
-                            // dispatch(changeACSstate(ACS_INITIAL_STATE))
                     }
                 }
                 disabled={conditionalDisabledBtn(colorSelectionName)}

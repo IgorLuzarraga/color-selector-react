@@ -52,7 +52,7 @@ const iconStyle = (color) => {
 }
 
 const ListItem = ({colorSelection}) => {
-    const {id, color} = colorSelection
+    const {color} = colorSelection
     return(
         <li>
             <button 
@@ -60,8 +60,6 @@ const ListItem = ({colorSelection}) => {
                 // style={iconStyle(color)}
                 // onClick={ () => dispatch(removeColorSelection(id))}
             >  
-              {/* <FontAwesomeIcon icon={faCircle} className={changeIconStyle(id, activeCircleId)} /> */}
-              {/* <FontAwesomeIcon icon={faSquare} style={changeIconStyle(id, activeCircleId, color)} /> */}
               <FontAwesomeIcon icon={faSquare} style={iconStyle(color)}/>
             </button>
         </li>

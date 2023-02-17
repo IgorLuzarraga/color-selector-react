@@ -29,16 +29,6 @@ const colorSelectorSlice = createSlice({
         state.activeColorSelection = 
           changeColorToActiveCircleInColorSelection(state, action.payload)
       },
-      // resetActiveCircle: (state) => {
-      //   state.activeCircle = CIRCLE_ACTIVE_NONE
-      //   state.activeCircleColor = ACTIVE_CIRCLE_COLOR_DEFAULT
-      // },
-      // changeACSstateToInitialST: (state) => {
-      //   state.activeColorSelectionST = ACS_INITIAL_STATE
-      //   //state.activeColorSelection = initialColorSelection
-      //   state.activeCircle = CIRCLE_ACTIVE_NONE
-      //   state.activeCircleColor = ACTIVE_CIRCLE_COLOR_DEFAULT
-      // },
       changeACSstateToInitialST: (state) => {
         state.activeCircle = CIRCLE_ACTIVE_NONE
         state.activeCircleColor = ACTIVE_CIRCLE_COLOR_DEFAULT
@@ -108,7 +98,6 @@ export default colorSelectorSlice.reducer
 export const {
   setActiveCircle,
   changeActiveCircleColor,
-  // resetActiveCircle,
   changeACSstateToInitialST,
   changeACSstateToClickOnST,
   changeACSstateToColorPickingST,
