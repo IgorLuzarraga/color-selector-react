@@ -17,25 +17,23 @@ const trashCanStyle = {
 
 const SavedColorSelection = ({savedColorSelection}) => {
     const dispatch = useDispatch()
-    const {colorSelection, id} = savedColorSelection
+    const {colorSelection, id, name} = savedColorSelection
     
-    console.log("savedColorSelection: ", savedColorSelection)
     return (
         <div>
-            <button 
-                className='btnStyle'
-                onClick={ () => dispatch(removeColorSelection(id))}
-            >  
-              <FontAwesomeIcon icon={faTrashCan} />
-            </button>
+            <div>
+                {name}
+                <button 
+                    className='btnStyle'
+                    onClick={ () => dispatch(removeColorSelection(id))}
+                >  
+                <FontAwesomeIcon icon={faTrashCan} />
+                </button>
+            </div>
 
             <ul 
                 className='ulStyle'
-                onClick={ () => {
-                        dispatch(changeACSstateToRestoreST())
-                        dispatch(restoreColorSelection(colorSelection))
-                    }
-                }
+                onClick={ () => dispatch(restoreColorSelection(colorSelection))}
             >
                 {renderListItems(colorSelection)}
             </ul>
