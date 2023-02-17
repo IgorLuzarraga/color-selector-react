@@ -65,6 +65,10 @@ const colorSelectorSlice = createSlice({
         console.log("color selection: ", action.payload)
         state.activeColorSelection = action.payload
       },
+      setColorSelectionName: (state, action) => {
+        console.log(action.payload)
+        state.colorSelectionName = action.payload
+      }
     }
   })
 
@@ -103,5 +107,6 @@ export const {
   changeACSstateToRestoreST,
   removeColorSelection,
   restoreColorSelection,
-  saveColorSelection
+  saveColorSelection,
+  setColorSelectionName
 } = colorSelectorSlice.actions
