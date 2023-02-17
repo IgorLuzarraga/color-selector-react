@@ -21,7 +21,6 @@ const colorSelectorSlice = createSlice({
     initialState,
     reducers: {
       setActiveCircle: (state, action) => {
-        console.log("setActiveCircle: ", action.payload)
         state.activeCircle = action.payload
       },
       changeActiveCircleColor: (state, action) => {
@@ -59,11 +58,9 @@ const colorSelectorSlice = createSlice({
           )
       },
       restoreColorSelection: (state, action) => {
-        console.log("color selection: ", action.payload)
         state.activeColorSelection = action.payload
       },
       setColorSelectionName: (state, action) => {
-        console.log(action.payload)
         state.colorSelectionName = action.payload
       }
     }

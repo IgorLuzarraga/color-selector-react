@@ -41,11 +41,6 @@ const changeIconStyle = (
     const {r, g, b} = activeCircleColor
     const {r2, g2, b2} = color
 
-    console.log("changeIconStyle -> activeColorSelectionST: ", activeColorSelectionST)
-    
-    console.log("changeIconStyle -> activeCircleColor: ", activeCircleColor)
-    console.log("changeIconStyle -> color: ", color)
-
     const initialState = {
         'font-size': '25px',
         // background: CIRCLE_COLOR_DEFAULT 
