@@ -5,11 +5,13 @@ import ColorPicker from './components/colorPicker/ColorPicker';
 import ColorSelectionSavedList from './components/colorSelectionSavedList/ColorSelectionSavedList'
 import SaveColorSelection from './components/saveColorSelection/SaveColorSelection';
 import ColorSelectionName from './components/colorSelectionName/ColorSelectionName';
+import Header from './components/header/Header';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Header />
         <ActiveColorSelection />
         <ColorPicker />
         <ColorSelectionName />
