@@ -10,7 +10,7 @@ const Header = () => {
                 icon={faPalette} 
                 className='palette fa-rotate-180'
             />
-            <h4>Color palette generator</h4>
+            <h2>Color palette generator</h2>
         </header>
     )
 }
