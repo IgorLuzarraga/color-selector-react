@@ -40,7 +40,7 @@ const ListItem = ({item}) => {
 }
 
 const renderSavedText = (length) => 
-    length > 0 ? <h2>Saved pallettes</h2> : <h2> </h2>
+    length > 0 ? <h2>Saved palettes</h2> : <h2> </h2>
 
 const renderListItems = (list) =>
     list.map((item, index) => <ListItem key={index} item={item}/>)

@@ -1,0 +1,19 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin: 0px;
+    padding: 5px;
+    background-color: black;
+    align-items:center;
+    justify-content: left;
+    color: white;
+    gap: 15px;
+}
+
+
+.palette {
+    color: white;
+    background: black;
+    font-size: 30px;
+    vertical-align:middle;
+}

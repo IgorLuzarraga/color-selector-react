@@ -6,14 +6,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import './style.css'
 import { 
-    changeACSstateToRestoreST,
     removeColorSelection,
     restoreColorSelection,
  } from '../../features/colorSelector/colorSelectorSlice';
-
-const trashCanStyle = {
-    float: 'right'
-}
 
 const SavedColorSelection = ({savedColorSelection}) => {
     const dispatch = useDispatch()
@@ -24,10 +19,10 @@ const SavedColorSelection = ({savedColorSelection}) => {
             <div>
                 {name}
                 <button 
-                    className='btnStyle'
+                    className='trash-can-btnStyle'
                     onClick={ () => dispatch(removeColorSelection(id))}
                 >  
-                <FontAwesomeIcon icon={faTrashCan} />
+                <FontAwesomeIcon icon={faTrashCan} className='trash-can' />
                 </button>
             </div>
 
@@ -41,11 +36,14 @@ const SavedColorSelection = ({savedColorSelection}) => {
     );
 }
 
-const iconStyle = (color) => {
+const savedColorStyle = (color) => {
     const {r, g, b} = color
     return {
-        'font-size': '25px',
-        background: `rgb(${r}, ${g}, ${b})` 
+        width: '6vh',
+        height: '6vh',
+        background: `rgb(${r}, ${g}, ${b})`,
+        'margin-right': '15px',
+        border: 'solid 2px white'
     }
 }
 
@@ -53,13 +51,14 @@ const ListItem = ({colorSelection}) => {
     const {color} = colorSelection
     return(
         <li>
-            <button 
-                className='btnStyle'
+            {/* <button 
+                className='saved-colors-btnStyle'
                 // style={iconStyle(color)}
                 // onClick={ () => dispatch(removeColorSelection(id))}
             >  
               <FontAwesomeIcon icon={faSquare} style={iconStyle(color)}/>
-            </button>
+            </button> */}
+            <button style={savedColorStyle(color)}></button>
         </li>
     )   
 }

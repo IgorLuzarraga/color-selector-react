@@ -1,5 +1,5 @@
 const COLOR_SELECTED_NONE = "COLOR_SELECTED_NONE"
-const ACTIVE_CIRCLE_COLOR_DEFAULT = "blue"
+const ACTIVE_CIRCLE_COLOR_DEFAULT = "white"
 const COLOR_SELECTION_NAME_NONE = ""
 
 // Active circle Types

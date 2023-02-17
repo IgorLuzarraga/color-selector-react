@@ -6,9 +6,10 @@
 
 li {
     display: inline;
+    margin-right: 10px;
   }
   
-.btnStyle {
+.active-color-selector-btnStyle {
     font-size: 34px;
     cursor: pointer;
     /* background-color: rgba(255,255,255,0); */
@@ -21,19 +22,12 @@ li {
     /* font-size: 45px; */
 } 
 
-/* .button {
-    background-color: #04AA6D;
-    border: none;
+.square-icon {
     color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%; 
-  }
-*/
+    background: black;
+    /* font-size: 30px; */
+    /* vertical-align:middle; */
+}
 
 .iconActive {
     font-size: 35px;

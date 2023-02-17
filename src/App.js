@@ -6,6 +6,7 @@ import ColorSelectionSavedList from './components/colorSelectionSavedList/ColorS
 import SaveColorSelection from './components/saveColorSelection/SaveColorSelection';
 import ColorSelectionName from './components/colorSelectionName/ColorSelectionName';
 import Header from './components/header/Header';
+import Footer from './components/footer/Footer';
 import ColorPaletteGenerator from './components/colorPaletteGenerator/ColorPaletteGenerator';
 
 // function App() {
@@ -26,10 +27,11 @@ import ColorPaletteGenerator from './components/colorPaletteGenerator/ColorPalet
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header"> */}
         <Header />
         <ColorPaletteGenerator />
-      </header>
+      {/* </heakder> */}
+      {/* <Footer /> */}
     </div>
   );
 }

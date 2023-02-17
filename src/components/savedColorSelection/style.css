@@ -1,39 +1,39 @@
 .ulStyle {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin-top: 10px;
 }
 
 li {
     display: inline;
   }
-  
-.btnStyle {
+
+.trash-can {
+    color: white;
+    background: black;
+    font-size: 30px;
+    vertical-align:middle;
+}
+
+.trash-can-btnStyle {
     font-size: 34px;
     cursor: pointer;
-    /* background-color: rgba(255,255,255,0); */
-    /* background: rgb(67, 32, 32); */
-    margin-right: 2px;
-    /* border: 2px solid black; */
+    margin-left: 30vh;
     border: none;
     background-color:transparent;
-    /* border-radius: 15px; */
-    /* font-size: 45px; */
 } 
 
-/* .button {
-    background-color: #04AA6D;
-    border: none;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius: 50%; 
-  }
-*/
+.saved-colors-btnStyle {
+    cursor: pointer;
+    margin-right: 2px;
+    background-color:white;
+} 
+
+.square {
+    width: 4vh;
+    height: 4vh;
+    border: solid 2px white;
+}
 
 .iconActive {
     font-size: 35px;
