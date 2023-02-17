@@ -33,11 +33,18 @@ const colorSelectorSlice = createSlice({
       //   state.activeCircle = CIRCLE_ACTIVE_NONE
       //   state.activeCircleColor = ACTIVE_CIRCLE_COLOR_DEFAULT
       // },
+      // changeACSstateToInitialST: (state) => {
+      //   state.activeColorSelectionST = ACS_INITIAL_STATE
+      //   //state.activeColorSelection = initialColorSelection
+      //   state.activeCircle = CIRCLE_ACTIVE_NONE
+      //   state.activeCircleColor = ACTIVE_CIRCLE_COLOR_DEFAULT
+      // },
       changeACSstateToInitialST: (state) => {
-        state.activeColorSelectionST = ACS_INITIAL_STATE
-        //state.activeColorSelection = initialColorSelection
         state.activeCircle = CIRCLE_ACTIVE_NONE
         state.activeCircleColor = ACTIVE_CIRCLE_COLOR_DEFAULT
+        state.colorSelectionName = COLOR_SELECTION_NAME_NONE
+        state.activeColorSelectionST = ACS_INITIAL_STATE
+        // state.activeColorSelection = initialColorSelection
       },
       changeACSstateToClickOnST: (state) => {
         state.activeColorSelectionST = ACS_CLICK_ON_STATE
@@ -75,7 +82,8 @@ const colorSelectorSlice = createSlice({
 const saveColorSelectionHelper = (state) => {
   return {
     colorSelection: state.activeColorSelection,
-    id: state.lastColorSelectionId
+    id: state.lastColorSelectionId,
+    name: state.colorSelectionName
   }
 }
 
