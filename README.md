@@ -1,3 +1,9 @@
+1. download the code or clone the repository
+2. go to the project's directory
+3. run in the terminal: npm install
+4. run npm start
+5. in the browser go to: localhost:3000
+
 # Getting Started with Create React App and Redux
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
