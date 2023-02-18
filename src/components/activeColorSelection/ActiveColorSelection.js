@@ -63,7 +63,7 @@ const changeIconStyle = (
 
     const colorPickingStateDesactive = {
         'font-size': '45px',
-        background: `rgb(${r2}, ${g2}, ${b2})`,
+        background: `rgb(${r2}, ${g2}, ${b2})`
     }
 
     const restoringState = {

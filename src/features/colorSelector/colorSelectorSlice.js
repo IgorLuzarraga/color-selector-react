@@ -103,5 +103,7 @@ export const {
   removeColorSelection,
   restoreColorSelection,
   saveColorSelection,
-  setColorSelectionName
+  setColorSelectionName,
 } = colorSelectorSlice.actions
+
+export { initialState }
