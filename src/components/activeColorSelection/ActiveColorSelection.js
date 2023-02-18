@@ -42,50 +42,33 @@ const changeIconStyle = (
         'font-size': '45px',
         // background: CIRCLE_COLOR_DEFAULT 
         background: currenCircleColor,
-        // border: 'solid 2px white'
     }
 
     const clickOnStateActive = {
         'font-size': '65px',
         // bakckground: `rgb(${r}, ${g}, ${b})`
         background: ACTIVE_CIRCLE_COLOR_DEFAULT,
-        // border: 'solid 2px white',
         color: 'white'
     }
 
     const clickOnStateDesactive = {
         'font-size': '45px',
-        // background: `rgb(${r2}, ${g2}, ${b2})`
-        // width: '6vh',
-        // height: '6vh',
         background: currenCircleColor,
-        // border: 'solid 2px white'
     }
 
     const colorPickingStateActive = {
         'font-size': '65px',
         background: `rgb(${r}, ${g}, ${b})`,
-        // width: '6vh',
-        // height: '6vh',
-        // border: 'solid 2px white'
-        // background: activeCircleColor
     }
 
     const colorPickingStateDesactive = {
         'font-size': '45px',
-        // width: '6vh',
-        // height: '6vh',
         background: `rgb(${r2}, ${g2}, ${b2})`,
-        // border: 'solid 2px white'
     }
 
     const restoringState = {
         'font-size': '45px',
-        // width: '6vh',
-        // height: '6vh',
-        // 'background-color': `rgb(${r2}, ${g2}, ${b2})`
         background:  currenCircleColor,
-        // border: 'solid 2px white'
     }
 
     switch (activeColorSelectionST) {
@@ -118,6 +101,7 @@ const ListItem = ({circle, activeCircleColor}) => {
                         dispatch(changeACSstateToClickOnST())
                     }
                 }
+                className='active-color-selector-btnStyle'
                 style={changeIconStyle(
                         id, 
                         activeCircleId, 

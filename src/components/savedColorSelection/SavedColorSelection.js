@@ -43,7 +43,8 @@ const savedColorStyle = (color) => {
         height: '6vh',
         background: `rgb(${r}, ${g}, ${b})`,
         'margin-right': '5px',
-        border: 'solid 2px white'
+        border: 'solid 2px white',
+        cursor: 'pointer'
     }
 }
 
@@ -51,13 +52,6 @@ const ListItem = ({colorSelection}) => {
     const {color} = colorSelection
     return(
         <li>
-            {/* <button 
-                className='saved-colors-btnStyle'
-                // style={iconStyle(color)}
-                // onClick={ () => dispatch(removeColorSelection(id))}
-            >  
-              <FontAwesomeIcon icon={faSquare} style={iconStyle(color)}/>
-            </button> */}
             <button style={savedColorStyle(color)}></button>
         </li>
     )   

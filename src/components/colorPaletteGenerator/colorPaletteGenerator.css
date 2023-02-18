@@ -12,6 +12,29 @@
 [class^=row-] {
     display: flex;
     flex-direction: row;
+    flex-basis: 100%;
     gap: 2vh;
 }
 
+[class^=box-] {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+
+    font-family: sans-serif;
+    font-size: 25px;
+}
+
+.box-colorPicker {
+    flex-basis: 50%;
+}
+
+.box-colorSelectionName {
+    flex-basis: 50%;
+}
+
+@media (max-width: 480px) {
+    [class^=row-] {
+      flex-direction: column;
+    }
+}

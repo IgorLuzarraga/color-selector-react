@@ -12,21 +12,14 @@ li {
 .active-color-selector-btnStyle {
     font-size: 34px;
     cursor: pointer;
-    /* background-color: rgba(255,255,255,0); */
-    /* background: rgb(67, 32, 32); */
     margin-right: 2px;
-    /* border: 2px solid black; */
     border: none;
     background-color:transparent;
-    /* border-radius: 15px; */
-    /* font-size: 45px; */
 } 
 
 .square-icon {
     color: white;
     background: black;
-    /* font-size: 30px; */
-    /* vertical-align:middle; */
 }
 
 .iconActive {

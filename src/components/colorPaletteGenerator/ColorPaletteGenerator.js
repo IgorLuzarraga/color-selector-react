@@ -15,9 +15,14 @@ const ColorPaletteGenerator = () => {
             </div> {/* className='row-1' */}
 
             <div className='row-2'>
-                <ColorPicker />
-                <ColorSelectionName />
-                <SaveColorSelection />
+                <div className='box-colorPicker'>
+                    <ColorPicker />
+                </div>
+
+                <div className='box-colorSelectionName'>
+                    <ColorSelectionName />
+                    <SaveColorSelection />
+                </div>
             </div> {/* className='row-2' */}
 
             <div className='row-3'>
@@ -26,5 +31,6 @@ const ColorPaletteGenerator = () => {
         </div> // className='col-main'
     )  
 }
+
 
 export default ColorPaletteGenerator
