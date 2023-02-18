@@ -25,9 +25,3 @@ store.subscribe( function () {
   saveState(store.getState())
 })
 
-
-// export const store = configureStore({
-//   reducer: {
-//     colorSelector: colorSelectorReducer
-//   },
-// });
